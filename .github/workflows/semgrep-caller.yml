@@ -6,4 +6,4 @@ on:
     - main
 jobs:
   call-workflow:
-    uses: reusable_workflow_test/.github/workflows/reusable-semgrep.yml@main
+    uses: TestOrgForSemgrep/reusable_workflow_test/.github/workflows/reusable-semgrep.yml@main
