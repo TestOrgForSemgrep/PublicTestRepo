@@ -7,3 +7,5 @@ on:
 jobs:
   call-workflow-passing-data:
     uses: TestOrgForSemgrep/reusable_workflow_test/.github/workflows/reusable-semgrep.yml@main
+    secrets:
+      SEMGREP_APP_ORG_TOKEN: ${{ secrets.SEMGREP_ORG_TOKEN }}
