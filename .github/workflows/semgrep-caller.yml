@@ -1,0 +1,9 @@
+on:
+  workflow_dispatch: {}
+  pull_request: {}
+  push:
+    branches:
+    - main
+jobs:
+  call-workflow:
+    uses: TestOrgForSemgrep/reusable_workflow_test/.github/workflows/reusable-semgrep.yml@main
